@@ -1,2 +1,2 @@
-# gel
+# GEL
 Generic Extract Load
