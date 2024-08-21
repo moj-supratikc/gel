@@ -4,6 +4,7 @@ on:
   project_card:
     types:
       - moved
+      - created
 
 jobs:
   update-start-date:
@@ -50,7 +51,7 @@ jobs:
       with:
         script: |
           const issueNumber = ${{ steps.get_issue.outputs.result }};
-          const startDateField = "Start Date"; // Update this to your exact field name if it's different
+          const startDateField = "Start Date"; 
           const date = new Date().toISOString().split('T')[0];
           
           await github.issues.update({
