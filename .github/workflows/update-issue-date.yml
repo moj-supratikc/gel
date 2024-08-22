@@ -2,9 +2,7 @@ name: Update Start Date on Project Card Move
 
 on:
   project_card:
-    types:
-      - moved
-      - created
+    types: [moved, created]
 
 jobs:
   update-start-date:
