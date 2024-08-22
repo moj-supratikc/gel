@@ -1,8 +1,13 @@
 name: Update Start Date on Project Card Move
 
+permissions:
+  contents: write
+  issues: write
+
 on:
   project_card:
     types: [moved, created]
+
 
 jobs:
   update-start-date:
